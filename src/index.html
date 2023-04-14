@@ -3,12 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Filmoteka</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <h1>Заголовок!</h1>
-    <h2>Заголовок</h2>
+    <header>
+      <div class="layout">
+        <!-- <img src="./images/header_background_image_red.png" alt="header_bg_img"> -->
+        <div class="nav">
+          <form class="search-form" id="search-form">
+            <input
+              type="text"
+              name="searchQuery"
+              autocomplete="off"
+              placeholder="Movie search"
+            />
+            <button type="submit"><img src="./images/search_ico.png" alt="#"></button>
+          </form>
+          <div class="home"><a href="#">Home</a></div>
+          <div class="library"><a href="#">My Library</a></div>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="./images/header_logo.png" alt="#">
+          </a>
+          <h1>Filmoteka</h1>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
